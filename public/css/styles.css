@@ -415,10 +415,10 @@ footer {
 
   .technology-cards {
     .card-template-1 {
-      --card-height: 534px;
+      --card-height: auto;
       --card-width: 327px;
-
-      --card-text-height: 244px;
+      --image-height: 290px;
+      --card-text-height: 273px;
     }
   }
 }
