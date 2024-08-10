@@ -1,0 +1,16 @@
+Imagem hero:
+1 - https://www.agroetechsustentavel.com.br/wp-content/uploads/2024/04/141agrotech-2.jpg
+2 - https://www.code-brew.com/wp-content/uploads/2018/04/jeqe.jpg
+
+Imagens da seção sobre:
+1 - https://blog.aegro.com.br/wp-content/uploads/2022/06/estacao-meteorologica.jpg
+2 - https://uploads-capitalreset.seox.com.br/wp-content/uploads/2024/06/n6YlifB6-Agro-data-jpg.webp
+3 - https://media.istockphoto.com/id/1094620200/photo/drone-flying-over-field-at-sunset.jpg?s=612x612&w=0&k=20&c=4nXzsL1bfdaV535itA1_PnYFOOUifnZPFNQyYOWtaro=
+4 - https://boosteragro.com/blog-po/wp-content/uploads/2022/08/agricultura-de-precisao-1024x528.jpg
+
+Imagem da seção tecnologias:
+Background - https://blog.b2bstack.com.br/wp-content/uploads/2022/11/entenda-a-importancia-do-agrotech.jpg
+1 - https://researchblog.duke.edu/wp-content/uploads/2018/02/DroneFarm.jpg
+2 - https://blog.aegro.com.br/wp-content/uploads/2018/03/11-sensores-no-campo.png
+3 - https://veja.abril.com.br/wp-content/uploads/2019/09/usina-sao-martinho-automacao.jpg?quality=90&strip=info
+4 - https://veja.abril.com.br/wp-content/uploads/2024/04/GettyImages-1447011226.jpg.jpg?quality=90&strip=info

@@ -1,0 +1,471 @@
+/* Importar fonte Inter do Google Fontes */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  /* Cores */
+  --black-1: #0a0a0a;
+  --black-2: #505050;
+  --black-2-gradient: rgba(80, 80, 80, 0.4);
+  --white-1: #ffffff;
+  --white-2: #f5f5f7;
+  --accent-1: #12d20f;
+  --accent-2: #146614;
+
+  /* Bordas */
+  --corner-1: 30px;
+  --corner-2: 10px;
+
+  /* Transições */
+  --transition: 200ms ease-in-out;
+
+  /* Espaçamentos e tamanhos */
+  --component-spacing-1: 20px;
+  --component-spacing-2: 10px;
+  --section-spacing: 80px;
+  --section-header-spacing: 40px;
+  --inner-component-spacing: 20px;
+
+  --section-max-width: 355px;
+}
+
+/* Remover espaçamentos dos elementos */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* Animação suave ao clicar no botão para voltar ao topo */
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--white-2);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/* Definir os textos */
+h1,
+h2,
+h3,
+h4,
+p,
+span {
+  --color: var(--black-1);
+  --height: 120%;
+  --mb: ;
+  --size: ;
+  --weight: 700;
+
+  color: var(--color);
+  font-size: var(--size);
+  font-weight: var(--weight);
+  line-height: var(--height);
+  margin-bottom: var(--mb);
+}
+
+h1 {
+  --color: var(--white-1);
+  --mb: var(--component-spacing-1);
+  --size: 50px;
+
+  /* Propriedades do gradient e animação */
+  animation: textAnimation 5s infinite alternate;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(
+    to right,
+    var(--accent-1),
+    var(--accent-2),
+    var(--accent-1)
+  );
+  background-size: 500% auto;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  --mb: var(--section-header-spacing);
+  --size: 40px;
+
+  text-align: center;
+}
+
+h3 {
+  --mb: var(--component-spacing-2);
+  --size: 24px;
+  --weight: 600;
+}
+
+h4 {
+  --size: 20px;
+  --weight: 600;
+}
+
+p {
+  --height: 130%;
+  --size: 15px;
+  --weight: 400;
+}
+
+span {
+  --color: var(--black-2);
+}
+
+/* Classes para alinhamento */
+.flex-center-x {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-center-y {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--component-spacing-2);
+  justify-content: center;
+}
+
+/* Templates */
+.card-template-1 {
+  --card-height: ;
+  --card-width: ;
+  --display: flex;
+  --align-items: center;
+  --flex-direction: column;
+  --justify-content: center;
+
+  --image-height: ;
+  --image-width: 100%;
+  --image-border-radius: ;
+  --image-top-margin: ;
+  --image-horizontal-margin: ;
+
+  --paragraph-display: ;
+  --card-text-height: 100%;
+
+  display: var(--display);
+  align-items: var(--align-items);
+  flex-direction: var(--flex-direction);
+  justify-content: var(--justify-content);
+
+  background-color: var(--white-1);
+  border-radius: var(--corner-1);
+  height: var(--card-height);
+  overflow: hidden;
+  transition: 200ms ease-in-out all;
+  width: var(--card-width);
+
+  &:hover {
+    --paragraph-display: ;
+  }
+
+  img {
+    border-radius: var(--image-border-radius);
+    object-fit: cover;
+    margin: var(--image-top-margin) var(--image-horizontal-margin) 0;
+    height: var(--image-height);
+    width: var(--image-width);
+  }
+
+  .card-text {
+    padding: var(--inner-component-spacing);
+    height: var(--card-text-height);
+    width: 100%;
+
+    p {
+      color: var(--black-2);
+
+      span {
+        --weight: 400;
+
+        display: var(--paragraph-display);
+      }
+    }
+  }
+}
+
+/* Delimitar crescimento da página */
+#content {
+  --gap: 80px;
+
+  max-width: 1920px;
+  gap: var(--gap);
+  width: 100%;
+}
+
+/* Hero */
+#hero {
+  --height: 600px;
+  --h1-width: var(--section-max-width);
+
+  background-color: var(--white-1);
+  background-image: url("../assets/images/hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 var(--component-spacing-2);
+  text-align: center;
+  height: var(--height);
+  width: 100%;
+
+  h1 {
+    max-width: var(--h1-width);
+  }
+
+  p {
+    --color: var(--black-1);
+    --size: 16px !important;
+  }
+}
+
+/* Animação do texto da hero */
+@keyframes textAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Seção sobre */
+#about {
+  max-width: var(--section-max-width);
+  padding: 0 var(--component-spacing-2);
+}
+
+.about-cards {
+  .card-template-1 {
+    --image-height: 290px;
+    --card-width: 355px;
+  }
+}
+
+/* Seção benefícios */
+#benefits {
+  max-width: var(--section-max-width);
+  padding: 0 var(--component-spacing-2);
+}
+
+.benefit-cards {
+  .card-template-1 {
+    --card-width: 355px;
+    --align-items: start;
+
+    --image-height: 50px;
+    --image-width: 50px;
+    --image-top-margin: var(--inner-component-spacing);
+    --image-horizontal-margin: var(--inner-component-spacing);
+  }
+}
+
+/* Tecnologias */
+#technologies {
+  background-image: url("../assets/images/tecnologies.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+#technologies > div {
+  background-color: var(--black-2-gradient);
+  padding: var(--section-header-spacing) 10px;
+  width: 100%;
+
+  h2 {
+    --color: var(--white-1);
+  }
+
+  h2,
+  .technology-cards {
+    max-width: var(--section-max-width);
+  }
+
+  span {
+    --color: var(--accent-2);
+  }
+}
+
+.technology-cards {
+  .card-template-1 {
+    --image-height: 290px;
+    --card-width: 355px;
+  }
+}
+
+/* Rodapé */
+footer {
+  --bottom-padding: var(--component-spacing-1);
+
+  background-color: var(--white-1);
+  border-radius: var(--corner-1) var(--corner-1) 0 0;
+  gap: var(--component-spacing-1);
+  padding: var(--component-spacing-1) var(--component-spacing-2)
+    var(--bottom-padding);
+  width: 100%;
+
+  a {
+    background-color: var(--accent-1);
+    border-radius: 50px;
+    transition: var(--transition);
+    height: 40px;
+    width: 40px;
+
+    &:hover {
+      scale: 1.1;
+    }
+
+    img {
+      object-fit: cover;
+      height: 15px;
+      width: 15px;
+    }
+  }
+}
+
+/* Media queries */
+
+/* Tablets */
+@media (min-width: 700px) {
+  :root {
+    --component-spacing-1: 24px;
+    --section-spacing: 100px;
+    --section-header-spacing: 80px;
+    --inner-component-spacing: 30px;
+
+    --section-max-width: 664px;
+  }
+
+  h1 {
+    --size: 70px;
+  }
+
+  h2 {
+    --mb: 80px;
+    --size: 40px;
+  }
+
+  #content {
+    --gap: 100px;
+  }
+
+  #hero {
+    --h1-width: auto;
+  }
+
+  #about,
+  #benefits {
+    padding: 0;
+  }
+
+  .about-cards .card-template-1 {
+    --card-height: auto;
+    --card-width: 327px;
+
+    --image-height: 290px;
+    --image-width: 100%;
+    --image-horizontal-padding: ;
+    --card-text-height: 225px;
+
+    &.big-card {
+      --card-height: 525px;
+      --card-width: 100%;
+      --card-text-height: auto;
+
+      --image-height: 100%;
+      --image-border-radius: var(--corner-2);
+
+      h3 {
+        --height: 130%;
+        --size: 15px;
+        --weight: 600;
+      }
+
+      p {
+        --size: 20px;
+        --weight: 600;
+      }
+
+      img {
+        order: 1;
+        margin-left: 60px;
+      }
+    }
+  }
+
+  .benefit-cards {
+    .card-template-1 {
+      --card-height: 286px;
+      --card-width: 327px;
+    }
+  }
+
+  .technology-cards {
+    .card-template-1 {
+      --card-height: 534px;
+      --card-width: 327px;
+
+      --card-text-height: 244px;
+    }
+  }
+}
+
+/* Desktops */
+@media (min-width: 1024px) {
+  :root {
+    --inner-component-spacing: 40px;
+
+    --section-max-width: 1000px;
+  }
+
+  h1 {
+    --size: 90px;
+  }
+
+  h2 {
+    --size: 45px;
+  }
+
+  #hero {
+    --height: 500px;
+  }
+
+  .about-cards .card-template-1 {
+    --card-width: 340px;
+
+    &.big-card {
+      --card-width: 650px;
+    }
+  }
+
+  .benefit-cards {
+    .card-template-1 {
+      --card-height: 267px;
+      --card-width: 495px;
+    }
+  }
+
+  .technology-cards {
+    .card-template-1 {
+      --card-height: auto;
+      --card-width: 495px;
+
+      --image-height: 290px;
+
+      --card-text-height: 226px;
+    }
+  }
+}
